@@ -1,22 +1,20 @@
 int ka1 = 2;
 int ka2 = 3;
-int pin = 5;
-
-int PWM = 0;
+int PWM = 5;
 
 void setup() {
   // put your setup code here, to run once:
   Serial.begin(115200);
   pinMode(ka1, OUTPUT);
   pinMode(ka2, OUTPUT);
-  pinMode(pin,OUTPUT);
+  pinMode(PWM,OUTPUT);
 }
 
 void loop() {
   // put your main code here, to run repeatedly:
   digitalWrite(ka1, HIGH);
   digitalWrite(ka2, LOW);
-  analogWrite(pin,100);
+  analogWrite(PWM,100);
   Serial.println("max kiri");
   delay(5000);
 
@@ -24,7 +22,7 @@ void loop() {
   {
     digitalWrite(ka1, HIGH);
     digitalWrite(ka2, LOW);
-    analogWrite(pin,i);
+    analogWrite(PWM,i);
     Serial.print(String(i) +"  ..  ");
     delay(500);
   }
@@ -38,7 +36,7 @@ void loop() {
   {
     analogWrite(ka1, LOW);
     digitalWrite(ka2, HIGH);
-    analogWrite(pin,i);
+    analogWrite(PWM,i);
     Serial.print(String(i) +"  ..  ");
     delay(500);
   }
@@ -50,7 +48,7 @@ void loop() {
   
   digitalWrite(ka1, LOW);
   digitalWrite(ka2, HIGH);
-  analogWrite(pin,100);
+  analogWrite(PWM,100);
   Serial.println("max kanan");
   delay(3000);
 
