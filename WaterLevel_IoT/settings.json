@@ -1,0 +1,18 @@
+{
+  "calibration": "-230",
+  "debug_mode": "1",
+  "measurement_delay": "1",
+  "sending_data_delay": "1",
+  "appending_data_delay": "600",
+  "idwl": "80",
+  "maximum": "-40",
+  "minimum": "-60",
+  "password": "asdf12345",
+  "sensorD": "1",
+  "sensorN": "1",
+  "sensor_type": "0",
+  "ssid": "Water_Level_IoT",
+  "watchdog_timer": "11",
+  "hcsr04pin_trig": "2",
+  "hcsr04pin_echo": "4"
+}
